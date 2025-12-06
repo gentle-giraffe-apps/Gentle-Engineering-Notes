@@ -11,7 +11,7 @@ The goal is not to be exhaustive, but to be **clear, durable, and production-ori
 ## 📚 Articles
 
 ### Testing & Quality
-- **[Resilience Testing for iOS UI](./resilience-ios-ui-testing.md)**  
+- **[Resilience Testing for iOS UI](ios-resilience-ui-testing.md)**  
   Designing UI test harnesses that validate failure recovery, system robustness, and edge-case behavior in modern iOS apps.
 
 _(More articles will be added as systems, tools, and architectural topics mature.)_
@@ -53,6 +53,12 @@ All projects emphasize:
 - Testability
 - Clear architectural boundaries
 - Long-term maintainability
+
+---
+
+## 🤖 Tooling Note
+
+Portions of drafting and editorial refinement in this repository were accelerated using large language models (including ChatGPT, Claude, and Gemini) under direct human design, validation, and final approval. All technical decisions, code, and architectural conclusions are authored and verified by the repository maintainer.
 
 ---
 

@@ -1,50 +1,50 @@
-# UI Torture Testing with XCUITest: A Minimal, Practical Approach (V1)
+# iOS Resilience Testing with XCUITest: A Minimal, Practical Approach (V1)
 
 *Jonathan Ritchey --- Gentle Giraffe Apps*
 
 ------------------------------------------------------------------------
 
-## Why Torture Testing Still Matters in the Age of AI
+## Why Resilience Testing Still Matters in the Age of AI
 
 Modern AI tools can now generate impressive unit tests in seconds. Yet
 despite this, many of the most expensive and embarrassing bugs in
 production apps still come from:
 
--   Asynchronous race conditions\
--   View lifecycle timing issues\
--   Cancellation bugs\
--   Background / foreground transitions\
--   Partial state restoration after suspension
+- Asynchronous race conditions
+- View lifecycle timing issues
+- Cancellation bugs
+- Background / foreground transitions
+- Partial state restoration after suspension
 
 These are *not* happy‑path bugs. They emerge under **chaotic,
 long‑running, real‑world interaction**.
 
-This is where **UI torture testing** still shines.
+This is where **UI resilience testing** still shines.
 
-Rather than checking correctness under perfect conditions, torture
+Rather than checking correctness under perfect conditions, resilience
 testing deliberately stresses the app under unpredictable usage
 patterns: random taps, navigation, backgrounding, and relaunching---over
 and over.
 
-This article presents a **minimal, production‑practical V1 torture
+This article presents a **minimal, production‑practical V1 resilience
 harness** that:
 
--   Requires **no app code changes**
--   Runs entirely in **XCUITest**
--   Works with any existing UI‑testable iOS app
--   Can be adopted **today**, not next quarter
+- Requires **no app code changes**
+- Runs entirely in **XCUITest**
+- Works with any existing UI‑testable iOS app
+- Can be adopted **today**, not next quarter
 
 ------------------------------------------------------------------------
 
 ## The Core Idea
 
-At its heart, a UI torture test does just a few things:
+At its heart, a UI resilience test does just a few things:
 
-1.  Launch the app
-2.  Randomly perform user‑like actions
-3.  Periodically suspend and resume the app
-4.  Log everything with timestamps
-5.  Let the test run long enough for rare failures to surface
+1. Launch the app
+2. Randomly perform user‑like actions
+3. Periodically suspend and resume the app
+4. Log everything with timestamps
+5. Let the test run long enough for rare failures to surface
 
 Even this simple model is enough to uncover: - Navigation crashes -
 Zombie views and leaked tasks - Half‑completed async pipelines -
@@ -54,15 +54,15 @@ You do *not* need a perfect mocking setup to begin.
 
 ------------------------------------------------------------------------
 
-## A Minimal UI Torture Harness (Runs Today)
+## A Minimal UI Resilience Harness (Runs Today)
 
-This is the smallest useful torture test I've found in real projects. It
+This is the smallest useful resilience test I've found in real projects. It
 intentionally avoids any app‑specific assumptions.
 
 ``` swift
-final class UITortureTests: XCTestCase {
+final class UIResilienceeTests: XCTestCase {
 
-    func testUITorture() {
+    func testUIResilience() {
         let app = XCUIApplication()
         app.launch()
 
@@ -109,10 +109,10 @@ final class UITortureTests: XCTestCase {
 
 This test:
 
--   Randomly taps hittable UI elements
--   Randomly swipes
--   Regularly suspends and resumes the app
--   Emits a timestamped execution trace
+- Randomly taps hittable UI elements
+- Randomly swipes
+- Regularly suspends and resumes the app
+- Emits a timestamped execution trace
 
 Despite its simplicity, this pattern alone has uncovered real production
 bugs that dozens of deterministic UI tests never touched.
@@ -121,13 +121,13 @@ bugs that dozens of deterministic UI tests never touched.
 
 ## What This Catches Exceptionally Well
 
-Torture tests are especially effective at revealing:
+Resilience tests are especially effective at revealing:
 
--   Swift concurrency cancellation bugs\
--   Navigation controllers or SwiftUI stacks in invalid states\
--   Race conditions during token refresh\
--   Memory pressure issues caused by backgrounding\
--   Incomplete teardown of async tasks on suspension
+- Swift concurrency cancellation bugs
+- Navigation controllers or SwiftUI stacks in invalid states
+- Race conditions during token refresh
+- Memory pressure issues caused by backgrounding
+- Incomplete teardown of async tasks on suspension
 
 These failures rarely appear in short, scripted tests.
 
@@ -146,16 +146,16 @@ the app into a **logged‑in, realistic state**.
 
 In practice, teams use a mix of:
 
--   Launch arguments to bypass login in test builds
--   Injected tokens stored directly in the Keychain
--   Test‑only backend endpoints
--   Pre‑seeded local databases
+- Launch arguments to bypass login in test builds
+- Injected tokens stored directly in the Keychain
+- Test‑only backend endpoints
+- Pre‑seeded local databases
 
 Every production app differs in: - Auth provider - Token storage -
 Backend topology - CI security constraints
 
 For that reason, this article intentionally **does not prescribe a
-universal login strategy**. Instead, it focuses on the torture harness
+universal login strategy**. Instead, it focuses on the resilience harness
 itself---the chaos generator.
 
 Once a harness exists, higher‑fidelity setup (mocked vs pre‑prod
@@ -163,22 +163,22 @@ environments) becomes an **incremental upgrade**, not a prerequisite.
 
 ------------------------------------------------------------------------
 
-## Mocked vs Integrated Torture Testing
+## Mocked vs Integrated Resilience Testing
 
-In real workflows, torture testing often splits into two useful modes:
+In real workflows, resilience testing often splits into two useful modes:
 
-### Offline / Mocked Torture
+### Offline / Mocked Resilience
 
--   No real networking
--   Deterministic data
--   Finds intrinsic UI and state‑machine failures
--   Fast and stable
+- No real networking
+- Deterministic data
+- Finds intrinsic UI and state‑machine failures
+- Fast and stable
 
-### Pre‑Production / Integrated Torture
+### Pre‑Production / Integrated Resilience
 
--   Real networking and tokens
--   Finds serialization, latency, auth‑refresh issues
--   Higher signal, higher flakiness
+- Real networking and tokens
+- Finds serialization, latency, auth‑refresh issues
+- Higher signal, higher flakiness
 
 Both are valuable. Most teams eventually use **both**.
 
@@ -203,9 +203,9 @@ than core complexity.
 
 This minimal harness is not:
 
--   A replacement for deterministic UI tests
--   A CI pipeline solution by itself
--   A general mocking framework
+- A replacement for deterministic UI tests
+- A CI pipeline solution by itself
+- A general mocking framework
 
 It is a **chaos amplifier**.
 
@@ -222,7 +222,7 @@ What it cannot yet reliably do is: - Reason about long‑running async
 systems under lifecycle chaos - Predict emergent state corruption -
 Simulate weeks of real user entropy
 
-Torture testing remains one of the most effective ways to **manufacture
+Resilience testing remains one of the most effective ways to **manufacture
 rare failures on demand**.
 
 ------------------------------------------------------------------------
@@ -231,9 +231,9 @@ rare failures on demand**.
 
 You do not need a perfect infrastructure to begin. You only need:
 
--   A runnable harness
--   A long time horizon
--   A willingness to let chaos do its work
+- A runnable harness
+- A long time horizon
+- A willingness to let chaos do its work
 
 Start simple. Let bugs surface. Then iterate.
 
@@ -243,3 +243,7 @@ That is how durable test systems are actually built in practice.
 
 *Jonathan Ritchey --- Gentle Giraffe Apps* Senior iOS Engineer --- Swift
 • SwiftUI • Concurrency
+
+## 🤖 Tooling Note
+
+Portions of drafting and editorial refinement in this repository were accelerated using large language models (including ChatGPT, Claude, and Gemini) under direct human design, validation, and final approval. All technical decisions, code, and architectural conclusions are authored and verified by the repository maintainer.
