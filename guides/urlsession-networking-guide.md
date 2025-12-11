@@ -125,7 +125,7 @@ func retrying<T: Sendable>(
     for attempt in 1...maxAttempts {
         do {
             return try await operation()
-        } catch is CancellationError {
+        } catch let cancelError as CancellationError {
             throw error
         } catch {
             // If this was the last allowed attempt, rethrow
