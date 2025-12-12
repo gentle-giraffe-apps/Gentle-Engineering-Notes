@@ -7,45 +7,58 @@ Long-form engineering notes on modern iOS: Swift, SwiftUI, concurrency, testing,
 ## Directory Structure
 
 ```
-├── best_practices/      # Architecture & patterns
-├── design_documents/    # System design specs
-├── feasability_studies/ # Exploratory research
-├── guides/              # How-to references
-├── research_concepts/   # Technical explorations
-└── testing/             # Testing strategies
+├── 01_foundations/
+│   ├── best_practices/      # Architecture & patterns
+│   └── guides/              # How-to references
+├── 02_architecture_and_design/
+│   ├── architectural_guidance/  # Architectural patterns & approaches
+│   ├── design_documents/        # System design specs
+│   ├── feasability_studies/     # Exploratory research
+│   └── research_concepts/       # Technical explorations
+└── 03_testing_and_reliability/
+    └── testing/                 # Testing strategies
 ```
 
 ---
 
 ## Articles
 
-### Testing
-- [Resilience Testing for iOS UI](testing/ios-resilience-ui-testing.md)
-- [Headless Integration Testing](testing/headless_integration_testing_for_mobile_apps.md)
-- [Modular UI Testing with Skeleton Apps](testing/modular_ui_testing_with_skeleton_apps.md)
+### 01 Foundations
 
-### Best Practices
-- [Async Architecture](best_practices/async_architecture.md)
-- [Data Modeling](best_practices/data_modeling.md)
-- [State Management](best_practices/state_management.md)
-- [Error Handling & Reliability](best_practices/error_handling_reliability.md)
-- [Local Persistence & Caching](best_practices/local_persistence_caching.md)
+#### Best Practices
+- [Async Architecture](01_foundations/best_practices/async_architecture.md)
+- [Data Modeling](01_foundations/best_practices/data_modeling.md)
+- [State Management](01_foundations/best_practices/state_management.md)
+- [Error Handling & Reliability](01_foundations/best_practices/error_handling_reliability.md)
+- [Local Persistence & Caching](01_foundations/best_practices/local_persistence_caching.md)
 
-### Guides
-- [Actors & Concurrency](guides/actors-concurrency-guide.md)
-- [AsyncStream Basics](guides/asyncstream-basics-guide.md)
-- [Codable & JSON](guides/codable-json-guide.md)
-- [FileManager & File I/O](guides/filemanager-file-io-guide.md)
-- [URLSession Networking](guides/urlsession-networking-guide.md)
+#### Guides
+- [Actors & Concurrency](01_foundations/guides/actors-concurrency-guide.md)
+- [AsyncStream Basics](01_foundations/guides/asyncstream-basics-guide.md)
+- [Codable & JSON](01_foundations/guides/codable-json-guide.md)
+- [FileManager & File I/O](01_foundations/guides/filemanager-file-io-guide.md)
+- [URLSession Networking](01_foundations/guides/urlsession-networking-guide.md)
 
-### Design Documents
-- [StoreKit 2 Async Service](design_documents/storekit2_async_service_design.md)
+### 02 Architecture & Design
 
-### Feasibility Studies
-- [Voice-First Hybrid UI](feasability_studies/voice_ui_first_hybrid_ui.md)
+#### Architectural Guidance
+- [TCA-Inspired State Machine MVVM](02_architecture_and_design/architectural_guidance/tca_inspired_state_machine_mvvm.md)
 
-### Research Concepts
-- [NEAR Token Internal Ledger](research_concepts/near_accounting_token_internal_ledger.md)
+#### Design Documents
+- [StoreKit 2 Async Service](02_architecture_and_design/design_documents/storekit2_async_service_design.md)
+
+#### Feasibility Studies
+- [Voice-First Hybrid UI](02_architecture_and_design/feasability_studies/voice_ui_first_hybrid_ui.md)
+
+#### Research Concepts
+- [NEAR Token Internal Ledger](02_architecture_and_design/research_concepts/near_accounting_token_internal_ledger.md)
+
+### 03 Testing & Reliability
+
+#### Testing
+- [Resilience Testing for iOS UI](03_testing_and_reliability/testing/ios-resilience-ui-testing.md)
+- [Headless Integration Testing](03_testing_and_reliability/testing/headless_integration_testing_for_mobile_apps.md)
+- [Modular UI Testing with Skeleton Apps](03_testing_and_reliability/testing/modular_ui_testing_with_skeleton_apps.md)
 
 ---
 
