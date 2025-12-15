@@ -9,6 +9,8 @@ Voice‑first computing is finally reaching a maturity point where it can *augme
 
 > **“Say what you want, watch the system do it.”**
 
+![](images/voice_ui_first_hybird_graphic.png)
+
 This hybrid pattern addresses two simultaneous needs:
 
 1. **Speed** — Speaking a complex command can be 10× faster than navigating forms.  
@@ -21,8 +23,6 @@ This study explores how a voice‑driven interface could sit **on top of** an ex
 - Apple’s **on-device lightweight LLM**
 - A new concept: **Voice‑to‑UI Schema Mapping**
 - Automated UI execution (pointer‑tap simulation or state-driven flows)
-
----
 
 # 2. Why Voice + Traditional UI Beats Pure Chat Interfaces
 
