@@ -2,6 +2,8 @@
 
 Long-form engineering notes on modern iOS: Swift, SwiftUI, concurrency, testing, and architecture.
 
+💬 **[Join the discussion. Feedback and questions welcome](https://github.com/gentle-giraffe-apps/Gentle-Engineering-Notes/discussions)**
+
 ---
 
 ## Authorship & Approach
@@ -34,6 +36,7 @@ They evolve over time as my understanding deepens and as the platform changes.
 │   ├── architectural_guidance/  # Architectural patterns & approaches
 │   ├── design_documents/        # System design specs
 │   ├── feasability_studies/     # Exploratory research
+│   ├── product_design_prds/     # Product requirement documents
 │   └── research_concepts/       # Technical explorations
 └── 03_testing_and_reliability/
     └── testing/                 # Testing strategies

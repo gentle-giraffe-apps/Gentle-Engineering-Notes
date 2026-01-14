@@ -28,4 +28,4 @@ These design documents help communicate senior/staff-level thinking and provide 
 
 ## Documents
 
-- *storekit2-architecture-mocking-and-purchase-flow.md* — A modern StoreKit 2 service architecture with full async/await support, deterministic mocking, and simulated purchase UI flows for realistic testing and demos.
+- [storekit2_async_service_design.md](storekit2_async_service_design.md) — A modern StoreKit 2 service architecture with full async/await support, deterministic mocking, and simulated purchase UI flows for realistic testing and demos.
