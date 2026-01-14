@@ -2,8 +2,6 @@
 
 Long-form engineering notes on modern iOS: Swift, SwiftUI, concurrency, testing, and architecture.
 
-💬 **[Join the discussion. Feedback and questions welcome](https://github.com/gentle-giraffe-apps/Gentle-Engineering-Notes/discussions)**
-
 ---
 
 ## Articles
