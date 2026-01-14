@@ -129,3 +129,19 @@ img {
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
 }
+
+/* Make Giscus less vertically dominant */
+.giscus-frame {
+  min-height: 320px;
+}
+
+/* Shrink the editor when not focused */
+.giscus-frame textarea {
+  min-height: 90px !important;
+  max-height: 140px;
+}
+
+/* Let it grow when user is interacting */
+.giscus-frame textarea:focus {
+  min-height: 160px !important;
+}
