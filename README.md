@@ -111,3 +111,4 @@ Portions of drafting and editorial refinement in this repository were accelerate
 
 MIT License — free to use, reference, and adapt with attribution.
 
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=gentle-giraffe-apps.Gentle-Engineering-Notes)
