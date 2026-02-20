@@ -16,6 +16,7 @@ Long-form engineering notes on modern iOS: Swift, SwiftUI, concurrency, testing,
 - [State Management](01_foundations/best_practices/state_management.md)
 - [Error Handling & Reliability](01_foundations/best_practices/error_handling_reliability.md)
 - [Local Persistence & Caching](01_foundations/best_practices/local_persistence_caching.md)
+- [Collaborating with Backend as Mobile](01_foundations/best_practices/collaborating_with_backend_as_mobile.md)
 
 #### Guides
 - [Actors & Concurrency](01_foundations/guides/actors-concurrency-guide.md)
@@ -35,6 +36,9 @@ Long-form engineering notes on modern iOS: Swift, SwiftUI, concurrency, testing,
 #### Feasibility Studies
 - [Voice-First Hybrid UI](02_architecture_and_design/feasability_studies/voice_ui_first_hybrid_ui.md)
 
+#### Product Design PRDs
+- [Pinball Say-It-Back PRD](02_architecture_and_design/product_design_prds/Pinball_Say_It_Back_PRD.md)
+
 #### Research Concepts
 - [NEAR Token Internal Ledger](02_architecture_and_design/research_concepts/near_accounting_token_internal_ledger.md)
 
@@ -44,6 +48,7 @@ Long-form engineering notes on modern iOS: Swift, SwiftUI, concurrency, testing,
 - [Resilience Testing for iOS UI](03_testing_and_reliability/testing/ios-resilience-ui-testing.md)
 - [Headless Integration Testing](03_testing_and_reliability/testing/headless_integration_testing_for_mobile_apps.md)
 - [Modular UI Testing with Skeleton Apps](03_testing_and_reliability/testing/modular_ui_testing_with_skeleton_apps.md)
+- [Integration Testing Under Realistic Load](03_testing_and_reliability/testing/integration-testing-realistic-load.md)
 
 ---
 
