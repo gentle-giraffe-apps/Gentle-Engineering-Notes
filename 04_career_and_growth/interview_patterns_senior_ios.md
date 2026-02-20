@@ -31,7 +31,7 @@ The job seeking process consists of a series of sequential phases. Below is a st
 ### 3. Engaging After a Response
 
 - My response rate for applications is around:
-  - 1 in 10 gets a recruiter or automated advancement response. 
+  - 1 in 10 gets a recruiter or automated advancement response.
   - 3 in 10 gets an eventual rejection.
   - 6 in 10 are silent, and I never hear anything.
 
@@ -63,30 +63,30 @@ The job seeking process consists of a series of sequential phases. Below is a st
 
 ### 4. Engaging in the Next Step
 
-- A technical interview with an internal developer.
+- **A technical interview with an internal developer.**
   - About 7 in 10 times.
 
-- An engineering manager or future manager interview.
+- **An engineering manager or future manager interview.**
   - About 2 in 10 times.
   - This usually delves into whether your previous experience matches their expectations for the current role, and whether there's alignment / chemistry in best practices, conflict resolution, mentoring, etc.
   - Sometimes there's a good fit, the engineering manager is a true engineer, with real scars, and alignment on unit testing coverage, having someone who isn't biased testing releases, and various other important metrics.
-  - Othertimes, the engineering manager comes from a product background and there isn't alignment, or they are looking someone leaning towards staff or principal level responsibility in a senior role.
-  - It's often a good time to see how teams function, whether there are other experts are available, or you're going to be the only expert, how failures are handled, how well represented the engineering team is within management, whether the culture and company is healthy or not, whether people are encouraged to be honest and surface issue early or there are optics issues. What's the technical debt load looking like. Is the product complicated with a "magical sync engine". How are difficult architectural issues resolved, etc.
+  - Other times, the engineering manager comes from a product background and there isn't alignment, or they are looking someone leaning towards staff or principal level responsibility in a senior role.
+  - It's often a good time to see how teams function, whether there are other experts available, or you're going to be the only expert, how failures are handled, how well represented the engineering team is within management, whether the culture and company is healthy or not, whether people are encouraged to be honest and surface issues early or there are optics issues. What's the technical debt load looking like. Is the product complicated with a "magical sync engine". How are difficult architectural issues resolved, etc.
 
-- An automated technical assessment with an external vendor with a real human interview via Karat.
+- **An automated technical assessment with an external vendor with a real human interview via Karat.**
   - About 1 in 20 times.
   - This can be an hour and half including technical discussions around iOS and Swift topics, a PR review, and coding challenge. It's fairly comprehensive and very technical.
 
-- An automated technical assessment with CodeSignal.
+- **An automated technical assessment with CodeSignal.**
   - About 1 in 30 times.
-  - This is a web-portal with Swift compiler (usually with autocomplete). The web-IDE can take some getting used to. There usually at project with various objectives.
+  - This is a web-portal with Swift compiler (usually with autocomplete). The web-IDE can take some getting used to. There is usually a project with various objectives.
   - Problems tend to be practical but involve some thought and involve basic data structures.
 
-- An automated technical assessment with Byteboard.
+- **An automated technical assessment with Byteboard.**
   - About 1 in 30 times.
   - Very practical. Had a positive experience with this.
 
-- A semi-technical prototyping round with a product manager.
+- **A semi-technical prototyping round with a product manager.**
   - About 1 in 50 times.
   - Lots of fun, but depending on position, it could be for something very competitive, and most of the candidates eliminated.
   - In my case, I checked the existing people, and competition for the role and it was off the charts. Current iOS employees were 1 in a 500, i.e. conference speakers and book authors.
@@ -95,32 +95,39 @@ The job seeking process consists of a series of sequential phases. Below is a st
 
 ### 5. Engaging in a Multi-Round Technical and Behavioral Assessment
 
-The canonical multi-round interview is an "onsite virtual zoom". This is really just a series of back-to-back zoom sessions with different interviewers or panels.
-Usually they are organized as such:
-1. Interview with a Product Manager (30 minutes).
-  a. Friendly.
-  b. How do you work with people in your team?
-  c. How do you resolve conflicts?
-  d. How do you escalate issues when something goes wrong?
-  e. What's an example where something didn't work out, and how did you address it within your pod's structure and across teams?
-  f. etc. etc.
+The canonical multi-round interview is an "onsite virtual zoom". This is really just a series of back-to-back zoom sessions with different interviewers or panels. Usually they are organized as such:
 
-2. Interview with an Senior or Staff iOS Engineer (someone above you technically). (1 hour)
-  a. Live coding with Xcode. Types:
-    1. Variation on an Item list in SwiftUI. 5 out of 10.
-       a. Fetched from the Network or a given service. 8 out of 10.
-       b. Fetched from the file system. 2 out of 10.
-    2. Model and Page decoding from a service. 5 out of 10.
-    3. A given project of medium complexity with unit tests with various issues. 2 out of 10.
-    4. Login and details screen with username and password rules. 1 out of 10.
-    5. List of models from canned json accessed from the project as a text file. 1 out of 10.
-    6. A given project of large complexity based "TCA (the composable architecture" using SwiftData. 1 out of 10.
-    7. A given project of medium complexity with SwiftUI gotchas and combine unit tests. 1 out of 10.
-  b. An interactive discussion without any live coding. 2 out of 10.
-  c. A playground where an objective is given, i.e. design a API manager, which is then gradually made more complex escalating to discuss concurrency, in-flight cancellation etc.
+**1. Interview with a Product Manager (30 minutes)**
 
-3. Secondary interview with another Senior or Staff iOS Engineer. (A different aspect not covered by the first interview)
-4. A final round with an engineering manager or hiring manager.
+- Friendly.
+- How do you work with people in your team?
+- How do you resolve conflicts?
+- How do you escalate issues when something goes wrong?
+- What's an example where something didn't work out, and how did you address it within your pod's structure and across teams?
+- etc. etc.
+
+**2. Interview with a Senior or Staff iOS Engineer — someone above you technically (1 hour)**
+
+- **Live coding with Xcode.** Types:
+  - Variation on an Item list in SwiftUI. *5 out of 10.*
+    - Fetched from the Network or a given service. *8 out of 10.*
+    - Fetched from the file system. *2 out of 10.*
+  - Model and Page decoding from a service. *5 out of 10.*
+  - A given project of medium complexity with unit tests with various issues. *2 out of 10.*
+  - Login and details screen with username and password rules. *1 out of 10.*
+  - List of models from canned JSON accessed from the project as a text file. *1 out of 10.*
+  - A given project of large complexity based on TCA (The Composable Architecture) using SwiftData. *1 out of 10.*
+  - A given project of medium complexity with SwiftUI gotchas and Combine unit tests. *1 out of 10.*
+- **An interactive discussion without any live coding.** *2 out of 10.*
+- **A playground where an objective is given**, i.e. design an API manager, which is then gradually made more complex escalating to discuss concurrency, in-flight cancellation, etc.
+
+**3. Secondary interview with another Senior or Staff iOS Engineer**
+
+- A different aspect not covered by the first interview.
+
+**4. A final round with an engineering manager or hiring manager**
+
+### Other Observed Interview Formats
 
 - A team and collaborative interview with Product Manager.
 - A one-on-one live coding interview with an iOS expert (UIKit, SwiftUI).
