@@ -71,7 +71,7 @@ The job seeking process consists of a series of sequential phases. Below is a st
   - This usually delves into whether your previous experience matches their expectations for the current role, and whether there's alignment / chemistry in best practices, conflict resolution, mentoring, etc.
   - Sometimes there's a good fit, the engineering manager is a true engineer, with real scars, and alignment on unit testing coverage, having someone who isn't biased testing releases, and various other important metrics.
   - Other times, the engineering manager comes from a product background and there isn't alignment, or they are looking someone leaning towards staff or principal level responsibility in a senior role.
-  - It's often a good time to see how teams function, whether there are other experts available, or you're going to be the only expert, how failures are handled, how well represented the engineering team is within management, whether the culture and company is healthy or not, whether people are encouraged to be honest and surface issues early or there are optics issues. What's the technical debt load looking like. Is the product complicated with a "magical sync engine". How are difficult architectural issues resolved, etc.
+  - It's often a good time to see how teams function, whether there are other experts available, or you're going to be the only expert, how failures are handled, how well represented the engineering team is within management, whether the culture and company is healthy or not, whether people are encouraged to be honest and surface issues early or there are optics issues. What's the technical debt load looking like. How complex is the core product architecture. How are difficult architectural issues resolved, etc.
 
 - **An automated technical assessment with an external vendor with a real human interview via Karat.**
   - About 1 in 20 times.
@@ -89,7 +89,7 @@ The job seeking process consists of a series of sequential phases. Below is a st
 - **A semi-technical prototyping round with a product manager.**
   - About 1 in 50 times.
   - Lots of fun, but depending on position, it could be for something very competitive, and most of the candidates eliminated.
-  - In my case, I checked the existing people, and competition for the role and it was off the charts. Current iOS employees were 1 in a 500, i.e. conference speakers and book authors.
+  - In my case, competition for the role was off the charts. The bar for existing iOS employees was exceptionally high.
 
 ## D. Multi-Round Technical & Behavioral Assessment
 
@@ -116,7 +116,7 @@ The canonical multi-round interview is an "onsite virtual zoom". This is really 
   - A given project of medium complexity with unit tests with various issues. *2 out of 10.*
   - Login and details screen with username and password rules. *1 out of 10.*
   - List of models from canned JSON accessed from the project as a text file. *1 out of 10.*
-  - A given project of large complexity based on TCA (The Composable Architecture) using SwiftData. *1 out of 10.*
+  - A given project of large complexity using a third-party architecture framework. *1 out of 10.*
   - A given project of medium complexity with SwiftUI gotchas and Combine unit tests. *1 out of 10.*
 - **An interactive discussion without any live coding.** *2 out of 10.*
 - **A playground where an objective is given**, i.e. design an API manager, which is then gradually made more complex escalating to discuss concurrency, in-flight cancellation, etc.
@@ -136,7 +136,7 @@ The canonical multi-round interview is an "onsite virtual zoom". This is really 
 - An interview with the engineering manager.
 - An interview around networking and model decoding.
 - A system design interview centered on client concerns.
-- A multi-panel interview with 5 staff-level engineers and an architect, along with a LeetCode-style question at the end.
+- A multi-panel interview with several senior and staff-level engineers, along with an algorithmic question.
 - A one-on-one live coding interview with an expert staff-level platform member (staff-shaped coding exercise, e.g., task coalescing, caching, concurrency edge cases).
 - A one-on-one live coding interview fixing advanced Combine unit tests on a challenging codebase.
 
@@ -144,12 +144,16 @@ The canonical multi-round interview is an "onsite virtual zoom". This is really 
 
 ### 6. Engaging in Alignment Interviews Following Multi-Round Interviews
 
-- An interview with the Chief Financial Officer.
-- An interview with VP of Product.
-- A behavioral and process interview with future boss and another engineering manager.
+In about 1 out 5 full rounds, there's an additional alignment round with top management.
+
+- An interview with VP of Product. 2 out 3
+- An interview with the Chief Financial Officer. 1 out 3
+- An interview with the CEO. 1 out 3
+- A behavioral and process interview with future boss and another engineering manager. 1 out of 3
 
 ## F. Offer & Decision Phase
 
 ### 7. Offer Arrival
 
-- 24-hour next business day offer arriving by email at 1pm with significant due diligence required.
+I only got to this phase in about 1 out of 50 interviews.
+- 24-hour next business day offer arriving by email at 1pm with significant due diligence needed in my case.
