@@ -59,6 +59,14 @@ The job seeking process consists of a series of sequential phases. Below is a st
 - Can be outdated and test edge cases like variables being captured and modified within a closure.
 - Can be very heavy on practical Apple knowledge and light on architecture, reasoning, etc.
 
+#### 3e. With a 3 day take home exam. Rare: 1 out of 30.
+
+- A prompt and figma spec is often given.
+- The recruiter will often minimize the amount of time for completion, saying something along the lines of 3 - 5 hours. I have found that in my experience that actually means 3 calendar days. I would avoid committing to this unless feeling well rested, and there are no serious future deadlines or commitments.
+- I would suggest blocking out the time and doing the take home in a way that exercises skills you're interested in learning.
+- Follow best practices around take-homes that can be discovered on youtube and in searches in general.
+- There can often be a followup technical interview that discusses the takehome with several senior iOS devs.
+
 ## C. Early Evaluation Rounds (Human & Automated)
 
 ### 4. Engaging in the Next Step
