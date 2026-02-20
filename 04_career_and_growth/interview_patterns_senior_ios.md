@@ -135,18 +135,18 @@ The canonical multi-round interview is an "onsite virtual zoom". This is really 
 
 **4. A final round with an engineering manager or hiring manager**
 
-### Other Observed Interview Formats
+### Multi-Round Technical sessions include:
 
-- A team and collaborative interview with Product Manager.
-- A one-on-one live coding interview with an iOS expert (UIKit, SwiftUI).
-- A one-on-one technical conceptual interview covering iOS, Swift, SwiftUI, concurrency (new and legacy), architecture, and best practices.
-- A paired coding exercise fixing issues on a complex codebase.
-- An interview with the engineering manager.
-- An interview around networking and model decoding.
-- A system design interview centered on client concerns.
-- A multi-panel interview with several senior and staff-level engineers, along with an algorithmic question.
-- A one-on-one live coding interview with an expert staff-level platform member (staff-shaped coding exercise, e.g., task coalescing, caching, concurrency edge cases).
-- A one-on-one live coding interview fixing advanced Combine unit tests on a challenging codebase.
+- A team and collaborative interview with Product Manager. 9 out of 10
+- A one-on-one live coding interview with an iOS expert (UIKit, SwiftUI). 8 out of 10.
+- A system design interview centered on client concerns. 7 out of 10.
+- An interview with the engineering manager. 5 out of 10.
+- An interview around networking and model decoding. 4 out of 10.
+- A one-on-one technical conceptual interview covering iOS, Swift, SwiftUI, concurrency (new and legacy), architecture, and best practices. 3 out of 10.
+- A multi-panel interview with several senior and staff-level engineers, along with an algorithmic question. 3 out of 10.
+- A paired coding exercise fixing issues on a complex codebase. 2 out of 10.
+- A one-on-one live coding interview with an expert staff-level platform member (staff-shaped coding exercise, e.g., task coalescing, caching, concurrency edge cases). 1 out of 10.
+- A one-on-one live coding interview fixing advanced Combine unit tests on a challenging codebase. 1 out of 10.
 
 ## E. Alignment & Executive Review
 
